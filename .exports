@@ -1,0 +1,27 @@
+#!/bin/sh
+# paths to my programs
+add_to_path "/home/kemboiray/My_Scripts"
+add_to_path "$HOME/bin"
+add_to_path "$HOME/.local/bin"
+add_to_path "/mnt/c/Windows"
+
+export BROWSER="/bin/edge"
+# add_to_path "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/"
+
+export N_PREFIX="$HOME/n"; # Added by n-install (see http://git.io/n-install-repo).
+add_to_path "$N_PREFIX/bin"
+
+# modular
+export MODULAR_HOME="/home/kemboiray/.modular"
+add_to_path "/home/kemboiray/.modular/pkg/packages.modular.com_mojo/bin"
+
+export EDITOR=nvim
+export VISUAL=nvim
+export W3MIMGDISPLAY_PATH="/usr/bin/w3m"
+export PAGER=bat
+export MANPAGER=bat
+
+export NODE_PATH=/usr/lib/node_modules
+
+export EZA_COLORS="ln=38;5;145:di=38;5;115:*.c=38;5;26:ex=38;5;76:*.py=38;5;31:*.js=38;5;220"
+export FPATH=".eza/completions/zsh:$FPATH"

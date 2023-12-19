@@ -1,0 +1,81 @@
+#!/bin/sh
+
+batdiff() {
+    git diff "$1" | bat
+}
+
+diff() {
+    /bin/diff "$@" | bat -l diff
+}
+
+manpdf() {
+  man -Tps "$@" | ps2pdf - /tmp/manpage.pdf; see.sh /tmp/manpage.pdf
+}
+
+install() {
+  sudo apt update;
+  sudo apt install "$1" -y;
+}
+
+upgrade() {
+    sudo apt update;
+    sudo apt upgrade -y;
+}
+
+# ranger prevent nested instances
+r() {
+    if [ -z "$RANGER_LEVEL" ]; then
+       ranger "$@"
+    else
+      printf "Cannot invoke nested instance. Return to ranger? [y/N] "
+      read -r response
+      if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]; then
+        exit
+      fi
+    fi
+}
+
+batman() {
+  man "$1" | bat -l man;
+}
+
+rff() {
+  r "$(ff)";
+}
+
+nvf() {
+  nvim "$(ff)";
+}
+
+add_to_path() {
+    if [ -d "$1" ] && ! /bin/echo ":$PATH:" | /bin/grep -q ":$1:"; then
+      export PATH="$1:$PATH"
+    fi
+}
+
+remove_dups() {
+  restore() {
+      if [ -d "$1" ] && ! /bin/echo ":$PATH:" | /bin/grep -q ":$1:"; then
+        export PATH="$PATH:$1"
+      fi
+  }
+
+  echo "$PATH" | tr ":" "\n" > /tmp/old_paths
+  export PATH=""
+
+  while read -r line
+  do
+    restore "$line"
+  done < /tmp/old_paths
+}
+
+function set_win_title(){
+  echo -ne "\033]0; $(ps -q $$ -o comm=) in $(basename "$PWD") \007"
+}
+notify-send() { wsl-notify-send.exe --category $WSL_DISTRO_NAME "${@}"; }
+
+# Print colors
+show_colors() { for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done }
+fetch () {
+        curl -s "http://localhost:3000/user/$1" | bat -l json
+}
