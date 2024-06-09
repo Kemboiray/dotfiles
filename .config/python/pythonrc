@@ -1,0 +1,9 @@
+#!/bin/env python3.10
+try:
+    from rich import pretty
+    from rich.traceback import install
+
+    pretty.install()
+    install(show_locals=True)
+except ImportError:
+    print("module `rich` not found")

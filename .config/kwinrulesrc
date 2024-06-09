@@ -1,0 +1,24 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1]
+Description=No Titlebar and Frame
+noborder=true
+noborderrule=2
+types=1
+wmclasscomplete=true
+
+[General]
+count=1
+rules=1
+
+[d0baca0a-6867-4319-9232-60b602863c2e]
+Description=No Titlebar and Frame
+noborder=true
+noborderrule=2
+types=1
+wmclasscomplete=true
+
+[f46e89ef-ad7e-419d-8c93-cdd6f3355dd3]
+Description=Remove titlebar and frame for all windows
+types=1

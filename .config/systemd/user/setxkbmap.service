@@ -1,0 +1,8 @@
+[Unit]
+Description=Set XKB layout
+
+[Service]
+ExecStart=/usr/bin/setxkbmap us
+
+[Install]
+WantedBy=default.target

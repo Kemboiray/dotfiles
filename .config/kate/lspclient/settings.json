@@ -1,0 +1,175 @@
+{
+    "servers": {
+        "bash": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/bash-language-server", "start"],
+            "root": "",
+            "url": "https://github.com/bash-lsp/bash-language-server",
+            "highlightingModeRegex": "^Bash$"
+        },
+        "bibtex": {
+            "use": "latex",
+            "highlightingModeRegex": "^BibTeX$"
+        },
+        "c": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/clangd", "-log=error", "--background-index", "--limit-results=500", "--completion-style=bundled"],
+            "commandDebug": ["clangd", "-log=verbose", "--background-index"],
+            "url": "https://clang.llvm.org/extra/clangd/",
+            "highlightingModeRegex": "^(C|ANSI C89|Objective-C)$"
+        },
+        "cpp": {
+            "use": "c",
+            "highlightingModeRegex": "^(C\\+\\+|ISO C\\+\\+|Objective-C\\+\\+)$"
+        },
+        "c-sharp": {
+            "command": ["omnisharp", "-lsp"],
+            "commandDebug": ["omnisharp", "--debug", "--verbose"],
+            "url": "https://github.com/OmniSharp/omnisharp-roslyn",
+            "highlightingModeRegex": "^C#$"
+        },
+        "d": {
+            "command": ["serve-d"],
+            "rootIndicationFileNames": ["dub.json"],
+            "url": "https://github.com/Pure-D/serve-d",
+            "highlightingModeRegex": "^D$"
+        },
+        "dart": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/dart", "analysis_server.dart.snapshot", "--lsp"],
+            "url": "https://github.com/dart-lang/sdk/blob/master/pkg/analysis_server/tool",
+            "highlightingModeRegex": "^Dart$",
+            "initializationOptions": {
+                "onlyAnalyzeProjectsWithOpenFiles": true
+            }
+        },
+        "docker": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/docker-langserver", "--stdio"],
+            "url": "https://github.com/rcjsuen/dockerfile-language-server-nodejs",
+            "highlightingModeRegex": "^Dockerfile$"
+        },
+        "elm": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/elm-language-server"],
+            "rootIndicationFileNames": ["elm.json"],
+            "url": "https://github.com/elm-tooling/elm-language-server",
+            "highlightingModeRegex": "^Elm$"
+        },
+        "fortran": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/fortls"],
+            "rootIndicationFileNames": [".fortls"],
+            "url": "https://github.com/hansec/fortran-language-server",
+            "highlightingModeRegex": "^Fortran.*$"
+        },
+        "go": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/gopls"],
+            "commandDebug": ["gopls", "serve", "-rpc.trace"],
+            "path": ["%{ENV:HOME}/go/bin", "%{ENV:USERPROFILE}/go/bin"],
+            "rootIndicationFileNames": ["go.mod"],
+            "url": "golang.org/x/tools/gopls",
+            "highlightingModeRegex": "^Go$"
+        },
+        "haskell": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/haskell-language-server-wrapper", "--lsp"],
+            "rootIndicationFileNames": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml"],
+            "url": "https://github.com/haskell/haskell-language-server",
+            "highlightingModeRegex": "^Haskell$"
+        },
+        "html": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/vscode-html-languageserver", "--stdio"],
+            "url": "https://github.com/Microsoft/vscode/tree/main/extensions/html-language-features/server",
+            "highlightingModeRegex": "^HTML$"
+        },
+        "javascript": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/typescript-language-server", "--stdio"],
+            "rootIndicationFileNames": ["package.json", "package-lock.json"],
+            "url": "https://github.com/theia-ide/typescript-language-server",
+            "highlightingModeRegex": "^JavaScript.*$",
+            "documentLanguageId": false
+        },
+        "kotlin": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/kotlin-language-server"],
+            "root": ".",
+            "url": "https://github.com/fwcd/kotlin-language-server",
+            "highlightingModeRegex": "^Kotlin$"
+        },
+        "latex": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/texlab"],
+            "url": "https://texlab.netlify.com/",
+            "highlightingModeRegex": "^LaTeX$"
+        },
+        "lua": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/lua-language-server"],
+            "url": "https://github.com/sumneko/lua-language-server",
+            "highlightingModeRegex": "^Lua$"
+        },
+        "nim": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/nimlsp"],
+            "path": ["%{ENV:HOME}/.nimble/bin", "%{ENV:USERPROFILE}/.nimble/bin"],
+            "url": "https://github.com/PMunch/nimlsp",
+            "highlightingModeRegex": "^Nim$"
+        },
+        "ocaml": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/ocamllsp"],
+            "url": "https://github.com/ocaml/ocaml-lsp",
+            "highlightingModeRegex": "^Objective Caml.*$"
+        },
+        "perl": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/perl", "-MPerl::LanguageServer", "-e", "Perl::LanguageServer::run", "--"],
+            "commandDebug": ["perl", "-MPerl::LanguageServer", "-e", "Perl::LanguageServer::run", "--", "--debug"],
+            "url": "https://github.com/richterger/Perl-LanguageServer",
+            "highlightingModeRegex": "^Perl$"
+        },
+        "python": {
+            "command": ["/home/kemboiray/.local/share/nvim/mason/bin/basedpyright-langserver"],
+            "url": "https://github.com/python-lsp/python-lsp-server",
+            "highlightingModeRegex": "^Python$"
+        },
+        "r": {
+            "command": ["R", "--slave", "-e", "languageserver::run()"],
+            "url": "https://github.com/REditorSupport/languageserver",
+            "highlightingModeRegex": "^R Script$"
+        },
+        "racket": {
+            "command": ["racket","-l","racket-langserver"],
+            "rootIndicationFileNames": ["info.rkt"],
+            "url": "https://github.com/jeapostrophe/racket-langserver",
+            "highlightingModeRegex": "^Racket$"
+        },
+        "ruby": {
+            "command": ["solargraph", "stdio"],
+            "rootIndicationFileNames": ["Gemfile", "Gemfile.lock", "gems.rb", "gems.lock", "Rakefile"],
+            "url": "https://solargraph.org",
+            "highlightingModeRegex": "^Ruby$"
+        },
+        "rust": {
+            "command": ["rust-analyzer"],
+            "path": ["%{ENV:HOME}/.cargo/bin", "%{ENV:USERPROFILE}/.cargo/bin"],
+            "rootIndicationFileNames": ["Cargo.lock", "Cargo.toml"],
+            "url": "https://rust-analyzer.github.io",
+            "highlightingModeRegex": "^Rust$"
+        },
+        "scala": {
+            "command": ["metals"],
+            "rootIndicationFileNames": ["build.sbt"],
+            "url": "https://scalameta.org/metals/",
+            "highlightingModeRegex": "^Scala$"
+        },
+        "typescript": {
+            "use": "javascript",
+            "highlightingModeRegex": "^TypeScript.*$",
+            "documentLanguageId": false
+        },
+        "vala": {
+            "command": ["vala-language-server"],
+            "url": "https://github.com/Prince781/vala-language-server",
+            "highlightingModeRegex": "^Vala$"
+        },
+        "yaml": {
+            "command": ["yaml-language-server", "--stdio"],
+            "url": "https://github.com/redhat-developer/yaml-language-server",
+            "highlightingModeRegex": "^YAML$"
+        },
+        "zig": {
+            "command": ["zls"],
+            "url": "https://github.com/zigtools/zls",
+            "highlightingModeRegex": "^Zig$"
+        }
+    }
+}

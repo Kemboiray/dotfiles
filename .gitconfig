@@ -1,0 +1,35 @@
+[user]
+	name = Kemboiray
+	email = kemboiray@gmail.com
+[include]
+	path = "/home/kemboiray/.config/git-delta/themes.gitconfig"
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+	autocrlf = false
+	pager = delta
+	fileMode = false
+	excludesfile = .local_gitignore
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[delta]
+	features = gruvmax-fang
+	navigate = true
+	side-by-side = true
+	; pager = bat -p
+	true-color = always
+[delta "interactive"]
+	keep-plus-minus-markers = false
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
+[push]
+	autoSetupRemote = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

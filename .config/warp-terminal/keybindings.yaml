@@ -1,0 +1,19 @@
+---
+"notebookview:focus_terminal_input": none
+"editor:edit_link": none
+"ai_assistant_panel:focus_terminal_input": none
+"terminal:executing_command_move_cursor_word_right": none
+"terminal:copy": none
+"editor_view:clear_and_copy_lines": none
+"editor_view:move_forward_one_subword": none
+"editor_view:add_cursor_below": none
+"workspace:show_settings_account_page": none
+"editor_view:move_backward_one_word": none
+"terminal:select_previous_block": none
+"editor_view:move_backward_one_subword": none
+"editor_view:select_command": none
+"terminal:clear_blocks": none
+"editor_view:cmd_i": alt-i
+"terminal:select_next_block": none
+"terminal:reinput_commands": none
+"editor_view:add_cursor_above": none

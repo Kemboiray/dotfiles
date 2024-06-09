@@ -1,0 +1,15 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/.local/kitty.app/bin/kitty,file:$HOME/.local/kitty.app/bin/kitty
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16
+
+[MainWindow]
+1366x768 screen: Height=718
+1366x768 screen: Width=1364
+1366x768 screen: Window-Maximized=true
+1366x768 screen: XPosition=0
+1366x768 screen: YPosition=0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABVYAAALnAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP-1=eDP-1

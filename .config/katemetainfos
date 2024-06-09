@@ -1,0 +1,214 @@
+Bookmarks=
+Checksum=0b264aa76a7f646e9043437444f0e9f6037cff46
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=lua
+Mode=Lua
+Mode Set By User=false
+Time=2024,5,8,15,10,44.714
+URL=
+
+[file:///etc/profile.d/wezterm.sh]
+Bookmarks=
+Checksum=1cc83f86c72a217a0c56bf4f4e5d9a8834142817
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2024,5,14,11,11,41.336
+URL=file:///etc/profile.d/wezterm.sh
+
+[file:///home/kemboiray/.config/gwenviewrc]
+Bookmarks=
+Checksum=f5bc693b6168a3992f51c23864f8c9560e9f3c65
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2024,5,8,13,34,1.6480000000000001
+URL=file:///home/kemboiray/.config/gwenviewrc
+
+[file:///home/kemboiray/.config/nvim/init.lua]
+Bookmarks=
+Checksum=20753467f5ea7f0b90ee3b62f38f37cc07ce9e99
+Encoding=UTF-8
+Highlighting=Lua
+Highlighting Set By User=false
+Indentation Mode=lua
+Mode=Lua
+Mode Set By User=false
+Time=2024,5,8,13,52,23.155
+URL=file:///home/kemboiray/.config/nvim/init.lua
+
+[file:///home/kemboiray/.config/nvim/lua/plugins/formatting.lua]
+Bookmarks=
+Checksum=36b9b853f81d5f57113642f547baffba32fe1a14
+Encoding=UTF-8
+Highlighting=Lua
+Highlighting Set By User=false
+Indentation Mode=lua
+Mode=Lua
+Mode Set By User=false
+Time=2024,5,8,13,52,21.543
+URL=file:///home/kemboiray/.config/nvim/lua/plugins/formatting.lua
+
+[file:///home/kemboiray/.config/nvim/lua/plugins/plugins.lua]
+Bookmarks=
+Checksum=3c3f5e15c1aff6ceff13f03485c5986b67e4ac6e
+Encoding=UTF-8
+Highlighting=Lua
+Highlighting Set By User=false
+Indentation Mode=lua
+Mode=Lua
+Mode Set By User=false
+Time=2024,5,8,13,52,20.273
+URL=file:///home/kemboiray/.config/nvim/lua/plugins/plugins.lua
+
+[file:///home/kemboiray/.config/zsh/plugins]
+Bookmarks=
+Checksum=93ebcf4e705e998c1dbb319f590f67dce4ffb62a
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2024,6,4,12,52,9.642
+URL=file:///home/kemboiray/.config/zsh/plugins
+
+[file:///home/kemboiray/.functions.sh]
+Bookmarks=
+Checksum=51c5607a897ee8b75ada1bb66df28b156138cc74
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2024,5,8,13,40,9.277
+URL=file:///home/kemboiray/.functions.sh
+
+[file:///home/kemboiray/.local/share/applications/kitty.desktop]
+Bookmarks=
+Checksum=ba03014110cba795fc658972efff8df95bedcc09
+Encoding=UTF-8
+Highlighting=.desktop
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=.desktop
+Mode Set By User=false
+Time=2024,5,8,14,18,49.142
+URL=file:///home/kemboiray/.local/share/applications/kitty.desktop
+
+[file:///home/kemboiray/.profile]
+Bookmarks=
+Checksum=fed8ec587ed2b03cd64e73d0eee9e0c08648c598
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2024,5,8,5,53,6.921
+URL=file:///home/kemboiray/.profile
+
+[file:///home/kemboiray/.zshenv]
+Bookmarks=
+Checksum=024a357f18fb8f079a182e5dc1cd7476d9a4b247
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2024,5,15,17,54,48.786
+URL=file:///home/kemboiray/.zshenv
+
+[file:///home/kemboiray/.zshrc]
+Bookmarks=
+Checksum=bc92cf8d829c0e25a0ab4ca97bba50c0b8a5776d
+Encoding=UTF-8
+Highlighting=Zsh
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Zsh
+Mode Set By User=false
+Time=2024,5,15,17,54,48.786
+URL=file:///home/kemboiray/.zshrc
+
+[file:///home/kemboiray/Projects/algorithmic_sciences/.envrc]
+Bookmarks=
+Checksum=312743b32d61642f8cfd9cd621c1c9f72e191b84
+Encoding=UTF-8
+Highlighting=Bash
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Bash
+Mode Set By User=false
+Time=2024,5,15,17,54,48.786
+URL=file:///home/kemboiray/Projects/algorithmic_sciences/.envrc
+
+[file:///home/kemboiray/hello.js]
+Bookmarks=
+Checksum=0593dec2b42cca0e23a58f48bdc625a612031a5b
+Encoding=UTF-8
+Highlighting=JavaScript
+Highlighting Set By User=false
+Indentation Mode=cstyle
+Mode=JavaScript
+Mode Set By User=false
+Time=2024,5,8,13,50,33.641
+URL=file:///home/kemboiray/hello.js
+
+[file:///media/kemboiray/4C3C8F623C8F4644/ProgramData/chocolatey/lib/firanf/tools/chocolateyInstall.ps1]
+Bookmarks=
+Checksum=5d61fff56288939bc512c74b061a5d49a4153df1
+Encoding=UTF-8
+Highlighting=PowerShell
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=PowerShell
+Mode Set By User=false
+Time=2024,5,8,5,46,40.867
+URL=file:///media/kemboiray/4C3C8F623C8F4644/ProgramData/chocolatey/lib/firanf/tools/chocolateyInstall.ps1
+
+[file:///media/kemboiray/4C3C8F623C8F4644/Users/Brian/.config/tmux/tmux.conf]
+Bookmarks=
+Checksum=6dbe79dde7ede1831649441dc3a856f5a265eb36
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+Time=2024,5,10,10,10,43.558
+URL=file:///media/kemboiray/4C3C8F623C8F4644/Users/Brian/.config/tmux/tmux.conf
+
+[file:///media/kemboiray/4C3C8F623C8F4644/Users/Brian/.zshrc]
+Bookmarks=
+Checksum=23c0a64a97212ff8a011f4d68121729676bd3d96
+Encoding=UTF-8
+Highlighting=Zsh
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Zsh
+Mode Set By User=false
+Time=2024,5,10,11,19,51.079
+URL=file:///media/kemboiray/4C3C8F623C8F4644/Users/Brian/.zshrc
+
+[file:///media/kemboiray/4C3C8F623C8F4644/Users/Brian/AppData/Local/lazygit/config.yml]
+Bookmarks=
+Checksum=f83f63a654b22b8c1c5e16e67e605dd16fe0bf44
+Encoding=UTF-8
+Highlighting=YAML
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=YAML
+Mode Set By User=false
+Time=2024,5,14,6,13,0.104
+URL=file:///media/kemboiray/4C3C8F623C8F4644/Users/Brian/AppData/Local/lazygit/config.yml

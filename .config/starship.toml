@@ -1,0 +1,217 @@
+# Settings
+# =============================================================================
+# Timeout
+command_timeout = 100000
+
+format = """
+$all\
+$shell\
+$custom\
+$os\
+$fill\
+$cmd_duration $jobs $time\
+$line_break\
+$character\
+$shlvl\
+"""
+
+# Get editor completions based on the config schema
+# "$schema" = 'https://starship.rs/config-schema.json'
+
+[fill]
+symbol = " "
+
+[time]
+style = "bold 250"
+format = "[$time]($style)"
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "bold dimmed green"
+
+[jobs]
+symbol = ""
+style = "blink bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[character]
+# success_symbol = "[❮](bold green)"
+# error_symbol = "[❮](blink bold red)"
+# symbol = ' '
+# vimcmd_symbol = "[❮](green)"
+disabled = false
+success_symbol = "[](40)"
+error_symbol = "[](blink red)" # "[](blink red)"
+
+[username]
+format = '[$user]($style): '
+# style_user = 'bold cyan'
+show_always = true
+
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+style = "#044F88"
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[directory]
+# style = "#66aacc"
+style = "bold 115"
+read_only = "🔒"
+home_symbol = "🏡"
+truncation_symbol = '🏡 … /'
+
+[shell]
+disabled = false
+style = "italic #9468ff"
+nu_indicator = " nu"
+cmd_indicator = " cmd"
+powershell_indicator = " psh"
+zsh_indicator = " zsh"
+bash_indicator = " bsh"
+format = 'via [$indicator]($style) '
+
+# [status]
+# style = 'fg:red'
+# symbol = '❌ '
+# success_symbol = '🟢 '
+# format = '[$symbol$common_meaning$signal_name$maybe_int]($style) '
+# map_symbol = true
+# disabled = false
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+# symbol = " "
+style = "bold #9468ff"
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = "👑 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
+
+[os]
+disabled = false
+[package]
+symbol = "📦 "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+style = "#3773A5"
+
+[rlang]
+symbol = "ﳒ "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
