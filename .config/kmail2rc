@@ -1,2 +1,21 @@
 [$Version]
 update_info=webengineurlinterceptoradblock.upd:webengineurlinterceptoradblock_move_settings
+
+[Composer]
+1366x768 screen: Height=178
+1366x768 screen: Width=675
+1366x768 screen: XPosition=683
+1366x768 screen: YPosition=372
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAAAqMAAAArAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAGgAdABtAGwAVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAgAGQAaQByAGUAYwB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+eDP-1=eDP-1
+
+[Main Window]
+RestorePositionForNextInstance=false
+
+[Migratekde4]
+Version=1
+
+[Spelling]
+Language=en_US

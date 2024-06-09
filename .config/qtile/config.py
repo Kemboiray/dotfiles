@@ -9,59 +9,17 @@
 
 import os
 import subprocess
-import json
-from libqtile import hook
-from libqtile import qtile
-from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
+from libqtile import bar, layout, widget, hook
+from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
-from libqtile.dgroups import simple_key_binder
-from pathlib import Path
-
-from qtile_extras import widget
-from qtile_extras.widget.decorations import PowerLineDecoration
-
-# --------------------------------------------------------
-# Your configuration
-# --------------------------------------------------------
-
-# Keyboard layout in autostart.sh
-
-# Show wlan status bar widget (set to False if wired network)
-# show_wlan = True
-show_wlan = False
-
-# Show bluetooth status bar widget
-# show_bluetooth = True
-show_bluetooth = False
-
-# --------------------------------------------------------
-# General Variables
-# --------------------------------------------------------
-
-# Get home path
-home = str(Path.home())
-
-# --------------------------------------------------------
-# Check for Desktop/Laptop
-# --------------------------------------------------------
-
-# 3 = Desktop
-platform = int(os.popen("cat /sys/class/dmi/id/chassis_type").read())
-
-# --------------------------------------------------------
-# Set default apps
-# --------------------------------------------------------
-
-terminal = "kitty"
-
-# --------------------------------------------------------
-# Keybindings
-# --------------------------------------------------------
 
 mod = "mod4"  # SUPER KEY
+terminal = "kitty"
 
 keys = [
+    # A list of available commands that can be bound to keys can be found
+    # at https://docs.qtile.org/en/latest/manual/config/lazy.html
+    # Switch between windows
     # Focus
     Key([mod], "Left", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "Right", lazy.layout.right(), desc="Move focus to right"),
@@ -73,379 +31,155 @@ keys = [
         lazy.layout.next(),
         desc="Move window focus to other window around",
     ),
-    # Move
+    # Move windows between left/right columns or move up/down in current stack.
+    # Moving out of range in Columns layout will create new column.
     Key(
-        [mod, "shift"],
-        "Left",
-        lazy.layout.shuffle_left(),
-        desc="Move window to the left",
+        [mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"
     ),
     Key(
         [mod, "shift"],
-        "Right",
+        "l",
         lazy.layout.shuffle_right(),
         desc="Move window to the right",
     ),
-    Key([mod, "shift"], "Down", lazy.layout.shuffle_down(), desc="Move window down"),
-    Key([mod, "shift"], "Up", lazy.layout.shuffle_up(), desc="Move window up"),
-    # Swap
-    Key([mod, "shift"], "h", lazy.layout.swap_left()),
-    Key([mod, "shift"], "l", lazy.layout.swap_right()),
-    Key([mod], "Print", lazy.spawn(home + "/dotfiles/qtile/scripts/screenshot.sh")),
-    # Size
-    Key([mod, "control"], "Down", lazy.layout.shrink(), desc="Grow window to the left"),
-    Key([mod, "control"], "Up", lazy.layout.grow(), desc="Grow window to the right"),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
+    Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
+    # Grow windows. If current window is on the edge of screen and direction
+    # will be to screen edge - window would shrink.
+    Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
+    Key(
+        [mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"
+    ),
+    Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
+    Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
-    # Floating
-    Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating"),
-    # Split
+    # Toggle between split and unsplit sides of stack.
+    # Split = all windows displayed
+    # Unsplit = 1 window displayed, like Max layout, but still with
+    # multiple stack panes
+    Key([mod], "b", lazy.spawn("firefox"), desc="Firefox"),
+    Key([mod], "e", lazy.spawn("thunar"), desc="Thunar"),
     Key(
         [mod, "shift"],
         "Return",
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack",
     ),
-    # Toggle Layouts
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    # Fullscreen
-    Key([mod], "f", lazy.window.toggle_fullscreen()),
-    # System
-    Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod, "shift"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key(
-        [mod, "control"],
-        "q",
-        lazy.spawn(home + "/dotfiles/qtile/scripts/powermenu.sh"),
-        desc="Open Powermenu",
-    ),
-    # Apps
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod, "control"], "Return", lazy.spawn("rofi -show drun"), desc="Launch Rofi"),
+    # Toggle between different layouts as defined below
+    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key(
         [mod],
-        "b",
-        lazy.spawn("sh " + home + "/dotfiles/.settings/browser.sh"),
-        desc="Launch Browser",
+        "f",
+        lazy.window.toggle_fullscreen(),
+        desc="Toggle fullscreen on the focused window",
     ),
     Key(
-        [mod, "shift"],
-        "w",
-        lazy.spawn(home + "/dotfiles/qtile/scripts/wallpaper.sh"),
-        desc="Update Theme and Wallpaper",
+        [mod],
+        "t",
+        lazy.window.toggle_floating(),
+        desc="Toggle floating on the focused window",
     ),
-    Key(
-        [mod, "control"],
-        "w",
-        lazy.spawn(home + "/dotfiles/qtile/scripts/wallpaper.sh select"),
-        desc="Select Theme and Wallpaper",
-    ),
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl -q s +20%")),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl -q s 20%-")),
+    Key([mod, "control"], "Return", lazy.spawn("rofi -show drun"), desc="Launch Rofi"),
+    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    # Key(
+    #     [mod, "shift"],
+    #     "p",
+    #     lazy.spawn("killall picom; sleep 0.1; picom &"),
+    #     desc="Reload picom",
+    # ),
+    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 ]
 
-# --------------------------------------------------------
-# Groups
-# --------------------------------------------------------
+groups = [Group(i) for i in "123456789"]
 
-groups = [
-    Group("1", layout="monadtall"),
-    Group("2", layout="monadtall"),
-    Group("3", layout="monadtall"),
-    Group("4", layout="monadtall"),
-    Group("5", layout="monadtall"),
-]
-
-dgroups_key_binder = simple_key_binder(mod)
-
-# --------------------------------------------------------
-# Scratchpads
-# --------------------------------------------------------
-
-groups.append(
-    ScratchPad(
-        "6",
+for i in groups:
+    keys.extend(
         [
-            # DropDown(
-            #     "chatgpt",
-            #     "chromium --app=https://chat.openai.com",
-            #     x=0.3,
-            #     y=0.1,
-            #     width=0.40,
-            #     height=0.4,
-            #     on_focus_lost_hide=False,
-            # ),
-            DropDown(
-                "mousepad",
-                "mousepad",
-                x=0.3,
-                y=0.1,
-                width=0.40,
-                height=0.4,
-                on_focus_lost_hide=False,
+            # mod1 + letter of group = switch to group
+            Key(
+                [mod],
+                i.name,
+                lazy.group[i.name].toscreen(),
+                desc="Switch to group {}".format(i.name),
             ),
-            DropDown(
-                "terminal",
-                "kitty",
-                x=0.3,
-                y=0.1,
-                width=0.40,
-                height=0.4,
-                on_focus_lost_hide=False,
+            # mod1 + shift + letter of group = switch to & move focused window to group
+            Key(
+                [mod, "shift"],
+                i.name,
+                lazy.window.togroup(i.name, switch_group=True),
+                desc="Switch to & move focused window to group {}".format(i.name),
             ),
-            # DropDown(
-            #     "scrcpy",
-            #     "scrcpy -d",
-            #     x=0.8,
-            #     y=0.05,
-            #     width=0.15,
-            #     height=0.6,
-            #     on_focus_lost_hide=False,
-            # ),
-        ],
+            # Or, use below if you prefer not to switch to that group.
+            # # mod1 + shift + letter of group = move focused window to group
+            # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
+            #     desc="move focused window to group {}".format(i.name)),
+        ]
     )
-)
-
-keys.extend(
-    [
-        # Key([mod], "F10", lazy.group["6"].dropdown_toggle("chatgpt")),
-        Key([mod], "F11", lazy.group["6"].dropdown_toggle("mousepad")),
-        Key([mod], "F12", lazy.group["6"].dropdown_toggle("terminal")),
-        # Key([mod], "F9", lazy.group["6"].dropdown_toggle("scrcpy")),
-    ]
-)
-
-# --------------------------------------------------------
-# Pywal Colors
-# --------------------------------------------------------
-
-colors = os.path.expanduser("~/.cache/wal/colors.json")
-colordict = json.load(open(colors))
-Color0 = colordict["colors"]["color0"]
-Color1 = colordict["colors"]["color1"]
-Color2 = colordict["colors"]["color2"]
-Color3 = colordict["colors"]["color3"]
-Color4 = colordict["colors"]["color4"]
-Color5 = colordict["colors"]["color5"]
-Color6 = colordict["colors"]["color6"]
-Color7 = colordict["colors"]["color7"]
-Color8 = colordict["colors"]["color8"]
-Color9 = colordict["colors"]["color9"]
-Color10 = colordict["colors"]["color10"]
-Color11 = colordict["colors"]["color11"]
-Color12 = colordict["colors"]["color12"]
-Color13 = colordict["colors"]["color13"]
-Color14 = colordict["colors"]["color14"]
-Color15 = colordict["colors"]["color15"]
-
-# --------------------------------------------------------
-# Setup Layout Theme
-# --------------------------------------------------------
-
-layout_theme = {
-    "border_width": 3,
-    "margin": 15,
-    "border_focus": Color2,
-    "border_normal": "FFFFFF",
-    "single_border_width": 3,
-}
-
-# --------------------------------------------------------
-# Layouts
-# --------------------------------------------------------
 
 layouts = [
-    layout.Max(**layout_theme),
-    layout.MonadTall(**layout_theme),
-    layout.MonadWide(**layout_theme),
-    layout.RatioTile(**layout_theme),
-    layout.Floating(),
+    # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    # layout.Max(),
+    # Try more layouts by unleashing below layouts.
+    # layout.Stack(num_stacks=2),
+    # layout.Bsp(),
+    # layout.Matrix(),
+    layout.MonadTall(
+        # Define Window Gaps
+        # margin=10
+    ),
+    # layout.MonadWide(),
+    # layout.RatioTile(),
+    # layout.Tile(),
+    # layout.TreeTab(),
+    # layout.VerticalTile(),
+    # layout.Zoomy(),
 ]
 
-# --------------------------------------------------------
-# Setup Widget Defaults
-# --------------------------------------------------------
-
-widget_defaults = dict(font="FiraCode Nerd Font SemiBold", fontsize=14, padding=3)
+widget_defaults = dict(
+    font="sans",
+    fontsize=12,
+    padding=3,
+)
 extension_defaults = widget_defaults.copy()
-
-# --------------------------------------------------------
-# Decorations
-# https://qtile-extras.readthedocs.io/en/stable/manual/how_to/decorations.html
-# --------------------------------------------------------
-
-decor_left = {
-    "decorations": [
-        PowerLineDecoration(
-            path="arrow_left"
-            # path="rounded_left"
-            # path="forward_slash"
-            # path="back_slash"
-        )
-    ],
-}
-
-decor_right = {
-    "decorations": [
-        PowerLineDecoration(
-            path="arrow_right"
-            # path="rounded_right"
-            # path="forward_slash"
-            # path="back_slash"
-        )
-    ],
-}
-
-# --------------------------------------------------------
-# Widgets
-# --------------------------------------------------------
-
-widget_list = [
-    widget.TextBox(
-        **decor_left,
-        background=Color1 + ".4",
-        text="Apps",
-        foreground="ffffff",
-        desc="",
-        padding=10,
-        mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("rofi -show drun")},
-    ),
-    widget.TextBox(
-        **decor_left,
-        background="#ffffff.4",
-        text="  ",
-        foreground="000000.6",
-        fontsize=18,
-        mouse_callbacks={
-            "Button1": lambda: qtile.cmd_spawn(
-                home + "/dotfiles/qtile/scripts/wallpaper.sh select"
-            )
-        },
-    ),
-    widget.GroupBox(
-        **decor_left,
-        background="#ffffff.7",
-        highlight_method="block",
-        highlight="ffffff",
-        block_border="ffffff",
-        highlight_color=["ffffff", "ffffff"],
-        block_highlight_text_color="000000",
-        foreground="ffffff",
-        rounded=False,
-        this_current_screen_border="ffffff",
-        active="ffffff",
-    ),
-    widget.TextBox(
-        **decor_left,
-        background="#ffffff.4",
-        text=" ",
-        foreground="000000.6",
-        fontsize=18,
-        mouse_callbacks={
-            "Button1": lambda: qtile.cmd_spawn(
-                "bash " + home + "/dotfiles/.settings/browser.sh"
-            )
-        },
-    ),
-    widget.TextBox(
-        **decor_left,
-        background="#ffffff.4",
-        text=" ",
-        foreground="000000.6",
-        fontsize=18,
-        mouse_callbacks={
-            "Button1": lambda: qtile.cmd_spawn(
-                "bash " + home + "/dotfiles/.settings/filemanager.sh"
-            )
-        },
-    ),
-    widget.WindowName(
-        **decor_left, max_chars=50, background=Color2 + ".4", width=400, padding=10
-    ),
-    widget.Spacer(),
-    widget.Spacer(length=30),
-    widget.TextBox(**decor_right, background="#000000.3"),
-    widget.Memory(
-        **decor_right,
-        background=Color10 + ".4",
-        padding=10,
-        measure_mem="G",
-        format="{MemUsed:.0f}{mm} ({MemTotal:.0f}{mm})",
-    ),
-    widget.Volume(
-        **decor_right,
-        background=Color12 + ".4",
-        padding=10,
-        fmt="Vol: {}",
-    ),
-    widget.DF(
-        **decor_right,
-        padding=10,
-        background=Color8 + ".4",
-        visible_on_warn=False,
-        format="{p} {uf}{m} ({r:.0f}%)",
-    ),
-    widget.Bluetooth(
-        **decor_right,
-        background=Color2 + ".4",
-        padding=10,
-        mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("blueman-manager")},
-    ),
-    widget.Wlan(
-        **decor_right,
-        background=Color2 + ".4",
-        padding=10,
-        format="{essid} {percent:2.0%}",
-        mouse_callbacks={"Button1": lambda: qtile.cmd_spawn("alacritty -e nmtui")},
-    ),
-    widget.Clock(
-        **decor_right,
-        background=Color4 + ".4",
-        padding=10,
-        format="%Y-%m-%d / %I:%M %p",
-    ),
-    widget.TextBox(
-        **decor_right,
-        background=Color2 + ".4",
-        padding=5,
-        text=" ",
-        fontsize=20,
-        mouse_callbacks={
-            "Button1": lambda: qtile.cmd_spawn(
-                home + "/dotfiles/qtile/scripts/powermenu.sh"
-            )
-        },
-    ),
-]
-
-# Hide Modules if not on laptop
-if show_wlan == False:
-    del widget_list[13:14]
-
-if show_bluetooth == False:
-    del widget_list[12:13]
-
-# --------------------------------------------------------
-# Screens
-# --------------------------------------------------------
 
 screens = [
     Screen(
-        top=bar.Bar(
-            widget_list,
-            30,
-            padding=20,
-            opacity=0.7,
-            border_width=[0, 0, 0, 0],
-            margin=[0, 0, 0, 0],
-            background="#000000.3",
+        # top=bar.Bar(
+        bottom=bar.Bar(
+            [
+                # widget.CurrentLayout(),
+                widget.GroupBox(),
+                widget.Prompt(),
+                widget.WindowName(),
+                widget.Chord(
+                    chords_colors={
+                        "launch": ("#ff0000", "#ffffff"),
+                    },
+                    name_transform=lambda name: name.upper(),
+                ),
+                widget.TextBox("default config", name="default"),
+                # widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+                # widget.StatusNotifier(),
+                widget.Systray(),
+                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+                widget.QuickExit(),
+            ],
+            24,
+            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
+        # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
+        # By default we handle these events delayed to already improve performance, however your system might still be struggling
+        # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
+        # x11_drag_polling_rate = 60,
     ),
 ]
 
-# --------------------------------------------------------
-# Drag floating layouts
-# --------------------------------------------------------
-
+# Drag floating layouts.
 mouse = [
     Drag(
         [mod],
@@ -459,14 +193,13 @@ mouse = [
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
-# --------------------------------------------------------
-# Define floating layouts
-# --------------------------------------------------------
-
+dgroups_key_binder = None
+dgroups_app_rules = []  # type: list
+follow_mouse_focus = True
+bring_front_click = False
+floats_kept_above = True
+cursor_warp = False
 floating_layout = layout.Floating(
-    border_width=3,
-    border_focus=Color2,
-    border_normal="FFFFFF",
     float_rules=[
         # Run the utility of `xprop` to see the wm class and name of an X client.
         *layout.Floating.default_float_rules,
@@ -476,17 +209,8 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
-    ],
+    ]
 )
-
-# --------------------------------------------------------
-# General Setup
-# --------------------------------------------------------
-
-dgroups_app_rules = []  # type: list
-follow_mouse_focus = True
-bring_front_click = False
-cursor_warp = False
 auto_fullscreen = True
 focus_on_window_activation = "smart"
 reconfigure_screens = True
@@ -494,6 +218,9 @@ reconfigure_screens = True
 # If things like steam games want to auto-minimize themselves when losing
 # focus, should we respect this or not?
 auto_minimize = True
+
+# When using the Wayland backend, this can be used to configure input devices.
+wl_input_rules = None
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the
@@ -503,21 +230,11 @@ auto_minimize = True
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-
-# --------------------------------------------------------
-# Windows Manager Name
-# --------------------------------------------------------
-
-wmname = "QTILE"
-
-# --------------------------------------------------------
-# Hooks
-# --------------------------------------------------------
+wmname = "LG3D"
 
 
-# HOOK startup
+# Startup (Autostart)
 @hook.subscribe.startup_once
 def autostart():
-    autostartscript = "~/.config/qtile/autostart.sh"
-    home = os.path.expanduser(autostartscript)
-    subprocess.Popen([home])
+    script = os.path.expanduser("~/.config/qtile/autostart.sh")
+    subprocess.run([script])

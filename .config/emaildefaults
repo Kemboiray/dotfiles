@@ -2,5 +2,9 @@
 Profile=Default
 
 [PROFILE_Default]
+EmailAddress=
+FullName=Raymond Kemboi
+Organization=
+ReplyAddr=
 ServerType=
 TerminalClient=false
