@@ -78,7 +78,7 @@ element-icon {
 }
 
 element-text {
-    font:                           "Cartograph CF Italic 10";
+    font:                           "CaskaydiaCove NF Italic 10";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
