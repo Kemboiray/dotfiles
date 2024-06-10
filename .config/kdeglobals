@@ -151,12 +151,12 @@ XftSubPixel=rgb
 font=Noto Sans,10,-1,5,50,0,0,0,0,0
 
 [Icons]
-Theme=Adwaita
+Theme=Papirus
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
 SingleClick=false
-widgetStyle=qt5ct-style
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

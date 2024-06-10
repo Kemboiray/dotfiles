@@ -5,13 +5,13 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 count=0
 
 [Session: saved at previous logout]
-clientId1=102892801f119f000171795470400000995000004
-clientId2=102892801f119f000171795470400000995000007
+clientId1=102892801f119f000171803375500009450760004
+clientId2=102892801f119f000171803776100000015940007
 count=2
 program1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier
 program2=/usr/bin/kalendarac
-restartCommand1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,102892801f119f000171795470400000995000004_1717957049_424605
-restartCommand2=/usr/bin/kalendarac,-session,102892801f119f000171795470400000995000007_1717957049_426005
+restartCommand1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,102892801f119f000171803375500009450760004_1718038146_343294
+restartCommand2=/usr/bin/kalendarac,-session,102892801f119f000171803776100000015940007_1718038146_342814
 restartStyleHint1=0
 restartStyleHint2=0
 userId1=kemboiray
