@@ -30,7 +30,6 @@ fi
 export VISUAL=$EDITOR
 export PAGER="$MANPAGER"
 export BAT_PAGER=less
-export BROWSER=msedge
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export EZA_COLORS="ln=38;5;145:di=38;5;115:*.c=38;5;26:ex=38;5;76:*.py=38;5;31:*.js=38;5;220"
 # disable sort when completing `git checkout`
