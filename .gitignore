@@ -9,3 +9,4 @@ tmux/plugins/
 tmux-fzf
 nvim
 akonadi*
+__pycache__
