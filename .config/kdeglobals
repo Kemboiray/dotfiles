@@ -148,7 +148,7 @@ UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-font=Noto Sans,10,-1,5,50,0,0,0,0,0
+font=Noto Sans,9,-1,5,50,0,0,0,0,0
 
 [Icons]
 Theme=Papirus

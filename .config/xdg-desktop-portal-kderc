@@ -1,0 +1,8 @@
+[FileDialogSize]
+1366x768 screen: Height=512
+1366x768 screen: Width=920
+
+[KFileDialog Settings]
+Recent Files[$e]=IT1_Individual_Resident_Return_XLS.xls,file:$HOME/Downloads/Raymond Kemboi.pdf,file:$HOME/Downloads/Resume_24.pdf,file:$HOME/Documents/Raymond Kemboi.docx,file:$HOME/Downloads/Resume.pdf,file:$HOME/Downloads/IT1_Individual_Resident_Return_XLS.xls,file:$HOME/Documents/IT1_Individual_Resident_Return_XLS.xls
+Recent URLs[$e]=file:$HOME/Documents/,file:$HOME/,file:$HOME/Downloads/
+detailViewIconSize=16

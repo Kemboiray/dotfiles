@@ -3,7 +3,7 @@ typeset -U path PATH
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[comment]="fg=#727169,bold"
 . "$HOME/.cargo/env"
-export SHELL=/bin/zsh
+export SHELL="/home/linuxbrew/.linuxbrew/bin/zsh"
 export CONFIG_DIR="$HOME/.config/lazygit"
 [ -f "$HOME/.functions.sh" ] && source "$HOME/.functions.sh"
 [ -f ".functions.sh" ] && source ".functions.sh"
@@ -28,7 +28,7 @@ else
   export EDITOR=vim
 fi
 export VISUAL=$EDITOR
-export PAGER="$MANPAGER"
+export BAT_PAGER=less
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export EZA_COLORS="ln=38;5;145:di=38;5;115:*.c=38;5;26:ex=38;5;76:*.py=38;5;31:*.js=38;5;220"
 # disable sort when completing `git checkout`
