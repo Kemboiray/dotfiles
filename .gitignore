@@ -112,3 +112,4 @@ __pycache__
 .config/plasmashellrc
 .zcompdump
 .zcompcache/
+.config/session
