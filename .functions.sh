@@ -29,14 +29,14 @@ nvf() {
 }
 
 man() {
-	if [ "$#" -ne 1 ]; then
-		echo "Usage: $0 <command>"
-		return 1
-	fi
-	if /bin/man "$1" >/dev/null 2>&1; then
-		/bin/man "$1"
-	elif "$1" --help >/dev/null 2>&1; then
-		"$1" --help | nvim +Man!
+	# if [ "$#" -ne 1 ]; then
+	# 	echo "Usage: $0 <command>"
+	# 	return 1
+	# fi
+	if /bin/man "$@" >/dev/null 2>&1; then
+		/bin/man "$@"
+	elif "$@" --help >/dev/null 2>&1; then
+		"$@" --help | nvim +Man!
 	else
 		echo "No man page or help found"
 		return 1

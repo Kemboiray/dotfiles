@@ -18,6 +18,7 @@ alias gccs='gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -fsanitize=address
 alias gc='git commit'
 alias gcm='git commit -m'
 alias push='git push'
+alias pull='git pull'
 alias st='git status'
 alias co='git checkout'
 alias ls='eza --icons -hH --group-directories-first'

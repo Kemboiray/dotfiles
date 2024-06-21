@@ -20,7 +20,7 @@
 # Whether to set CPU% on a process to be based on the total CPU or per-core CPU% (not divided by the number of cpus).
 #unnormalized_cpu = false
 # Whether to group processes with the same name together by default.
-#group_processes = false
+group_processes = true
 # Whether to make process searching case sensitive by default.
 #case_sensitive = false
 # Whether to make process searching look for matching the entire word by default.
@@ -52,17 +52,17 @@
 # Remove space in tables
 #hide_table_gap = false
 # Show the battery widgets
-#battery = false
+# battery = false
 # Disable mouse clicks
 #disable_click = false
 # Built-in themes.  Valid values are "default", "default-light", "gruvbox", "gruvbox-light", "nord", "nord-light"
-# color = "gruvbox"
+color = "default"
 # Show memory values in the processes widget as values by default
-#mem_as_value = false
+mem_as_value = false
 # Show tree mode by default in the processes widget.
 #tree = false
 # Shows an indicator in table widgets tracking where in the list you are.
-#show_table_scroll_position = false
+show_table_scroll_position = true
 # Show processes as their commands by default in the process widget.
 #process_command = false
 # Displays the network widget with binary prefixes.

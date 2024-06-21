@@ -1,2 +1,27 @@
 [$Version]
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+2 screens: Height=985
+2 screens: Width=629
+2 screens: Window-Maximized=true
+2 screens: XPosition=2010
+2 screens: YPosition=7
+HDMI-1 eDP-1=HDMI-1
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABQAAAAOfAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/wallpaperflare.com_wallpaper.jpg
+Name1[$e]=wallpaperflare.com_wallpaper.jpg
+
+[SideBar]
+InformationSplitterSizes=0,0

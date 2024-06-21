@@ -26,6 +26,9 @@ magiclampEnabled=true
 [Tiling]
 padding=4
 
+[Tiling][134f4e9e-932a-5be7-8740-901c21bd852e]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 

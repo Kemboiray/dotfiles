@@ -55,19 +55,20 @@ local window_background_gradient = {
 	-- segment_smoothness = 0.0,
 }
 local enabled_harfbuzz_features = {
-	"ss06",
-	"ss09",
-	"ss01",
-	"ss02",
-	"ss03",
-	"ss19",
-	"ss20",
-	"cv29",
-	"cv30",
-	"clig=0",
-}
+	-- "ss06",
+	-- "ss09",
+	-- "ss01",
+	-- "ss02",
+	-- "ss03",
+	-- "ss19",
+	-- "ss20",
+	-- "cv29",
+	-- "cv30",
+	-- "clig",
+} -- ->
 return {
 	-- color_scheme = "Modus-Vivendi",
+	dpi = 96,
 	color_scheme = "Catppuccin Mocha (Gogh)",
 	window_background_gradient = window_background_gradient,
 	adjust_window_size_when_changing_font_size = false,

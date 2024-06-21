@@ -1,0 +1,11 @@
+[font]
+size = 11
+normal = { family = "CaskaydiaCove Nerd Font Mono", style = "Regular" }
+bold = { family = "CaskaydiaCove Nerd Font Mono", style = "Bold" }
+italic = { family = "CaskaydiaCove Nerd Font Mono", style = "Italic" }
+
+[window]
+opacity = 0.85
+
+[colors.primary]
+background = "#000000"
