@@ -13,68 +13,102 @@ __pycache__
 
 # Most of these change too often, so they're better off ignored
 .config/ibus
-    .config/X-Cinnamon-xdg-terminals.list
-    .config/arkrc
-    .config/baloofileinformationrc
-    .config/bluedevilglobalrc
-    .config/breezerc
-    .config/discoverrc
-    .config/dolphinrc
-    .config/dragonplayerrc
-    .config/emaildefaults
-    .config/gwenviewrc
-    .config/kaccessrc
-    .config/kactivitymanagerd-statsrc
-    .config/kactivitymanagerdrc
-    .config/kcmfonts
-    .config/kcminputrc
-    .config/kconf_updaterc
-    .config/kfontinstuirc
-    .config/kgammarc
-    .config/kglobalshortcutsrc
-    .config/ki
-    .config/kinfocenterrc
-    .config/kitty/Arthur.conf
-    .config/kitty/Modus_Vivendi.conf
-    .config/kitty/current-theme.conf
-    .config/kitty/diff.conf
-    .config/kitty/kanagawa.conf
-    .config/kitty/kitty.conf
-    .config/kitty/kitty.conf.bak
-    .config/kitty/rose-pine.conf
-    .config/kmail2rc
-    .config/kmixrc
-    .config/konq_history
-    .config/konquerorrc
-    .config/konsolerc
-    .config/konsolesshconfig
-    .config/kprivacyrc
-    .config/krunnerrc
-    .config/kscreenlockerrc
-    .config/ksmserverrc
-    .config/ksplashrc
-    .config/ktimezonedrc
-    .config/kwalletmanager5rc
-    .config/kwalletrc
-    .config/kwin_dialogsrc
-    .config/kwinrc
-    .config/kwinrulesrc
-    .config/kwriterc
-    .config/kxkbrc
-    .config/mimeapps.list
-    .config/okularpartrc
-    .config/okularrc
-    .config/partitionmanagerrc
-    .config/powerdevilrc
-    .config/powermanagementprofilesrc
-    .config/sddmthemeinstallerrc
-    .config/spectaclerc
-    .config/sweeperrc
-    .config/systemmonitorrc
-    .config/systemsettingsrc
-    .config/touchpadxlibinputrc
-    .config/user-dirs.dirs
-    .config/user-dirs.locale
-    .config/webengineurlinterceptoradblockrc
-    .config/xdg-desktop-portal-kderc
-    .config/xdg-terminals.list
+.config/X-Cinnamon-xdg-terminals.list
+.config/arkrc
+.config/baloofileinformationrc
+.config/bluedevilglobalrc
+.config/breezerc
+.config/discoverrc
+.config/dolphinrc
+.config/dragonplayerrc
+.config/emaildefaults
+.config/GIMP
+.config/gwenviewrc
+.config/kaccessrc
+.config/kactivitymanagerd-statsrc
+.config/kactivitymanagerdrc
+.config/kcmfonts
+.config/kcminputrc
+.config/kconf_updaterc
+.config/KDE
+.config/kfontinstuirc
+.config/kgammarc
+.config/kglobalshortcutsrc
+.config/ki
+.config/kinfocenterrc
+.config/kmail2rc
+.config/kmixrc
+.config/konq_history
+.config/konquerorrc
+.config/konsolerc
+.config/konsolesshconfig
+.config/kprivacyrc
+.config/krunnerrc
+.config/kscreenlockerrc
+.config/ksmserverrc
+.config/ksplashrc
+.config/ktimezonedrc
+.config/kwalletmanager5rc
+.config/kwalletrc
+.config/kwin_dialogsrc
+.config/kwinrc
+.config/kwinrulesrc
+.config/kwriterc
+.config/kxkbrc
+.config/mimeapps.list
+.config/okularpartrc
+.config/okularrc
+.config/partitionmanagerrc
+.config/powerdevilrc
+.config/powermanagementprofilesrc
+.config/sddmthemeinstallerrc
+.config/spectaclerc
+.config/sweeperrc
+.config/systemmonitorrc
+.config/systemsettingsrc
+.config/touchpadxlibinputrc
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/webengineurlinterceptoradblockrc
+.config/xdg-desktop-portal-kderc
+.config/xdg-terminals.list
+.config/PlasmaDiscoverUpdates
+.config/QtProject.conf
+.config/Trolltech.conf
+.config/akregatorrc
+.config/autokey/
+.config/dconf/
+.config/enchant/
+.config/goldendict/
+.config/gtk-3.0/
+.config/gtk-4.0/
+.config/gtkrc
+.config/gtkrc-2.0
+.config/kate/
+.config/katemetainfos
+.config/katerc
+.config/kateschemarc
+.config/katevirc
+.config/kde.org/
+.config/kdeconnect/
+.config/kded5rc
+.config/kdedefaults/
+.config/kdeglobals
+.config/khelpcenterrc
+.config/khotkeysrc
+.config/khtml/
+.config/khtmlrc
+.config/kitty/
+.config/libaccounts-glib/
+.config/libreoffice/
+.config/menus/
+.config/plasma-interactiveconsolerc
+.config/plasma-localerc
+.config/plasma-nm
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/plasmanotifyrc
+.config/plasmaparc
+.config/plasmarc
+.config/plasmashellrc
+.zcompdump
+.zcompcache/
