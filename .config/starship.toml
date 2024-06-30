@@ -41,8 +41,9 @@ format = "[$symbol]($style)"
 # symbol = ' '
 # vimcmd_symbol = "[❮](green)"
 disabled = false
-success_symbol = "[](40)"
-error_symbol = "[](blink red)" # "[](blink red)"
+# success_symbol = "[](40)"
+success_symbol = "[\\$](bold 40)"
+error_symbol = "[\\$](blink bold red)" # "[](blink red)"
 
 [username]
 format = '[$user]($style): '

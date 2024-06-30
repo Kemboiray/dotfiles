@@ -1,10 +1,10 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/kemboiray/dotfiles
+    - /home/kemboiray/dotfiles/.config/nvim
     - /home/kemboiray/dotfiles/.config/awesome
     - /home/kemboiray/Projects/tcp_socket_server
     - /home/kemboiray/.config/awesome
-    - /home/kemboiray/dotfiles/.config/nvim
     - /home/kemboiray/.config/nvim
     - /home/kemboiray/Projects/MMS_Frontend
 startuppopupversion: 5
