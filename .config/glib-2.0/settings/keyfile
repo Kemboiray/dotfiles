@@ -1,2 +1,6 @@
 [org/gnome/desktop/a11y/applications]
 screen-reader-enabled=false
+
+[org/gnome/desktop/interface]
+cursor-size=30
+cursor-theme='WinSur-dark-cursors'

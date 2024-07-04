@@ -51,9 +51,19 @@ if [ -n "$VIRTUAL_ENV" ]; then
 fi
 
 source "$ZDOTDIR/plugins"
-eval "$(starship init zsh)"
+if [[ ! $WARP_IS_LOCAL_SHELL_SESSION ]]; then
+  eval "$(starship init zsh)"
+fi
 eval "$(zoxide init zsh)"
 
 if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
+
+# pnpm
+export PNPM_HOME="/home/kemboiray/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

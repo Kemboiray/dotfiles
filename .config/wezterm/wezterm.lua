@@ -69,8 +69,16 @@ local enabled_harfbuzz_features = {
 return {
 	-- color_scheme = "Modus-Vivendi",
 	dpi = 96,
+	background = {
+		{
+			source = {
+				File = "/home/kemboiray/Pictures/cyberwave.png",
+			},
+			opacity = 0.95,
+		},
+	},
 	color_scheme = "Catppuccin Mocha (Gogh)",
-	window_background_gradient = window_background_gradient,
+	-- window_background_gradient = window_background_gradient,
 	adjust_window_size_when_changing_font_size = false,
 	audible_bell = "Disabled",
 	default_cursor_style = "BlinkingBar",
