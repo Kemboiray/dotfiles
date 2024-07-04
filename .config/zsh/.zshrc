@@ -55,11 +55,6 @@ if [[ ! $WARP_IS_LOCAL_SHELL_SESSION ]]; then
   eval "$(starship init zsh)"
 fi
 
-if [[ $SSH_CLIENT ]]; then
-  cd "$HOME/dotfiles/"
-  git checkout main
-  cd "-"
-fi
 eval "$(zoxide init zsh)"
 
 if [ -f ~/.aliases ]; then
