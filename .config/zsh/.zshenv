@@ -32,6 +32,7 @@ export VISUAL=$EDITOR
 export BAT_PAGER=less
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export EZA_COLORS="ln=38;5;145:di=38;5;115:*.c=38;5;26:ex=38;5;76:*.py=38;5;31:*.js=38;5;220"
+export FZF_DEFAULT_OPTS="--color=gutter:-1"
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false
 # set descriptions format to enable group support
