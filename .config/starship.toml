@@ -80,6 +80,7 @@ nu_indicator = " nu"
 cmd_indicator = " cmd"
 powershell_indicator = " psh"
 zsh_indicator = " zsh"
+unknown_indicator = " zsh"
 bash_indicator = " bsh"
 format = 'via [$indicator]($style) '
 
