@@ -112,3 +112,4 @@ __pycache__
 .zcompdump
 .zcompcache/
 .config/session
+remmina/
