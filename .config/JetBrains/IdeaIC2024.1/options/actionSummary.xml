@@ -1,0 +1,58 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditorBackSpace">
+      <i c="2" l="1720385938594" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="4" l="1720386227956" />
+    </e>
+    <e n="EditorDown">
+      <i c="8" l="1720386344819" />
+    </e>
+    <e n="EditorUp">
+      <i c="22" l="1720386343648" />
+    </e>
+    <e n="NewProject">
+      <i c="1" l="1720389165780" />
+    </e>
+    <e n="Terminal.CloseSession">
+      <i c="1" l="1720386230224" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="2" l="1720386381562" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="2" l="1720385943909" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1720385917259" />
+    </e>
+    <e n="com.intellij.execution.lineMarker.LineMarkerActionWrapper">
+      <i c="1" l="1720386362429" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="3" l="1720386159073" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1720389159917" />
+    </e>
+    <e n="com.intellij.openapi.updateSettings.impl.upgradeToUltimate.installation.install.UltimateInstaller$notifyAndOfferStart$notification$1">
+      <i c="1" l="1720390507762" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="2" l="1720386365609" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="1" l="1720386285793" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1720386183712" />
+    </e>
+    <e n="com.intellij.ui.dsl.builder.components.SegmentedButtonAction">
+      <i c="5" l="1720386011026" />
+    </e>
+    <e n="org.jetbrains.plugins.terminal.action.EnableBlockTerminalUiAction">
+      <i c="1" l="1720386187761" />
+    </e>
+  </component>
+</application>

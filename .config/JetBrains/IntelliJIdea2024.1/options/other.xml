@@ -1,0 +1,64 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Inter" />
+    <option name="fontSize" value="13.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "BLOCK_TERMINAL_LAST_USED_DATE": "1720386188",
+    "BLOCK_TERMINAL_LAST_USED_VERSION": "241.18034.62",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "2",
+    "MarketplacePluginsSearchHistory": "sp\ns",
+    "NewProjectWizard.generateOnboardingTips": "true",
+    "NewProjectWizard.gitState": "true",
+    "NewProjectWizard.gradleDslState": "KOTLIN",
+    "NewProjectWizard.groupIdState": "org.example",
+    "RunOnceActivity.java.code.vision.default.position.was.set": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "Maven",
+    "defaultJdkConfigured": "true",
+    "enter_selection_count": "4",
+    "evlsprt3.241": "3",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "241.18034.62",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "got.it.tooltip.new.terminal.promotion": "1",
+    "ide.memory.adjusted": "true",
+    "ide.try.ultimate.disabled": "true",
+    "ide.updates.old.dirs.scan.scheduled": "1720995353722",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "241.18034.62-IJ",
+    "jdk.selected.JAVA_MODULE": "22",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "1",
+    "previousColorScheme": "_@user_Dark",
+    "project.wizard.group": "promo-spring",
+    "registry.to.advanced.settings.migration.build": "IU-241.18034.62",
+    "ts.lib.d.ts.version": "5.4.3"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/kemboiray/Projects/Gemni"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

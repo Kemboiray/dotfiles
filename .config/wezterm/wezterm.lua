@@ -55,16 +55,16 @@ local window_background_gradient = {
 	-- segment_smoothness = 0.0,
 }
 local enabled_harfbuzz_features = {
-	-- "ss06",
-	-- "ss09",
-	-- "ss01",
-	-- "ss02",
-	-- "ss03",
-	-- "ss19",
-	-- "ss20",
-	-- "cv29",
-	-- "cv30",
-	-- "clig",
+	"ss06",
+	"ss09",
+	"ss01",
+	"ss02",
+	"ss03",
+	"ss19",
+	"ss20",
+	"cv29",
+	"cv30",
+	"clig",
 } -- ->
 return {
 	-- color_scheme = "Modus-Vivendi",
@@ -74,7 +74,7 @@ return {
 			source = {
 				File = "/home/kemboiray/Pictures/cyberwave.png",
 			},
-			opacity = 0.95,
+			opacity = 0.85,
 		},
 	},
 	color_scheme = "Catppuccin Mocha (Gogh)",
@@ -90,7 +90,7 @@ return {
 	exit_behavior = "Close",
 	font = wezterm.font({
 		family = "CaskaydiaCove Nerd Font Mono",
-		weight = "Regular",
+		weight = "Medium",
 		style = "Normal",
 		harfbuzz_features = enabled_harfbuzz_features,
 	}),

@@ -1,0 +1,177 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="Gemni" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="2f9c5mv6kukx5" />
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "JAVA": {
+      "usageCount": 1,
+      "lastUsed": 1720428588620
+    },
+    "Markdown": {
+      "usageCount": 1,
+      "lastUsed": 1720394447744
+    }
+  }
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="1" lastUsage="1720428588620" />
+    </language>
+    <language id="Markdown">
+      <summary usageCount="1" lastUsage="1720394447749" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java/com}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java/com}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java/com/bard}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Gemni" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java/com}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java/com/bard}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/kemboiray/Projects/Gemni/Gemni/src/main/java/com/bard/gemini}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2163000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32979503" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.32979503" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.33041722" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.33041722" left="0.32979503" />
+    </layoutV2>
+    <recentWindows>
+      <value>Services</value>
+      <value>Structure</value>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="192" y="21" width="982" height="702" key="SettingsEditor" timestamp="1720429921532">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="192" y="21" width="982" height="702" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1720429921531" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Gemni/src/main/java/com/bard/gemini/GeminiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -4,7 +4,7 @@
 
 [manager]
 ratio = [1, 3, 4]
-sort_by = "alphabetical"
+sort_by = "natural"
 sort_sensitive = false
 sort_reverse = false
 sort_dir_first = true
@@ -118,7 +118,9 @@ prepend_previewers = [
   { name = "*.ts", run = "bat" },
   { name = "*.tsx", run = "bat" },
   { name = "*.py", run = "bat" },
+  { name = "*.java", run = "bat" },
   { name = "*.md", run = "bat" },
+  { name = "*.toml", run = "bat" },
 ]
 preloaders = [
   { name = "*", cond = "!mime", run = "mime", multi = true, prio = "high" },

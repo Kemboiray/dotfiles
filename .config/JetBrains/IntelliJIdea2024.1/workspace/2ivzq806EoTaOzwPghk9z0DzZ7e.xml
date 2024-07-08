@@ -1,0 +1,147 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="learn" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="2f9c5mv6kukx5" SIDE_TABS_SIZE_LIMIT_KEY="-1" />
+  </component>
+  <component name="FileTypeUsageLocalSummary">{
+  &quot;data&quot;: {
+    &quot;JAVA&quot;: {
+      &quot;usageCount&quot;: 2,
+      &quot;lastUsed&quot;: 1720389154818
+    },
+    &quot;XML&quot;: {
+      &quot;usageCount&quot;: 1,
+      &quot;lastUsed&quot;: 1720386040434
+    }
+  }
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="2" lastUsage="1720389154823" />
+    </language>
+    <language id="XML">
+      <summary usageCount="1" lastUsage="1720386040434" />
+    </language>
+  </component>
+  <component name="MavenProjectNavigator">
+    <option name="groupStructurally" value="true" />
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/kemboiray/IdeaProjects/learn}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Application.Main" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="mySelectedTabIndex" value="-1" />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="501000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32540265" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.49931318" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.49931318" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.49931318" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.49931318" left="0.32540265" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+      <value>Build</value>
+      <value>Terminal</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="471" y="142" width="426" height="460" key="FileChooserDialogImpl" timestamp="1720394432214">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="471" y="142" width="426" height="460" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1720394432214" />
+    <state width="1284" height="321" key="GridCell.Tab.0.bottom" timestamp="1720386377123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1284" height="321" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1720386377123" />
+    <state width="1284" height="321" key="GridCell.Tab.0.center" timestamp="1720386377123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1284" height="321" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1720386377123" />
+    <state width="1284" height="321" key="GridCell.Tab.0.left" timestamp="1720386377123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1284" height="321" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1720386377123" />
+    <state width="1284" height="321" key="GridCell.Tab.0.right" timestamp="1720386377123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1284" height="321" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1720386377123" />
+    <state x="1004" y="548" width="341" height="139" key="ProcessPopupWindow" timestamp="1720390360486">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="1004" y="548" width="341" height="139" key="ProcessPopupWindow/0.0.1366.728@0.0.1366.728" timestamp="1720390360486" />
+    <state x="283" y="11" width="897" height="706" key="new project wizard" timestamp="1720389173535">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="283" y="11" width="897" height="706" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1720389173535" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/example/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

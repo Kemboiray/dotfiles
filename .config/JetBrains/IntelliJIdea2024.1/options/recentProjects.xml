@@ -1,0 +1,42 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/learn">
+          <value>
+            <RecentProjectMetaInfo frameTitle="learn" projectWorkspaceId="2ivzq806EoTaOzwPghk9z0DzZ7e">
+              <option name="activationTimestamp" value="1720394442515" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-241.18034.62" />
+              <option name="buildTimestamp" value="1718905980000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="0" y="0" width="1366" height="743" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1720386028431" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Projects/Gemni">
+          <value>
+            <RecentProjectMetaInfo frameTitle="Gemni" opened="true" projectWorkspaceId="2iwGtrxt0IuuJi4JOZePFWFJ5Bz">
+              <option name="activationTimestamp" value="1720429968375" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-241.18034.62" />
+              <option name="buildTimestamp" value="1718905980000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="0" y="0" width="1366" height="743" extendedState="6" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1720394443666" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Projects/Gemni" />
+    <option name="lastProjectLocation" value="$USER_HOME$/IdeaProjects" />
+  </component>
+</application>
